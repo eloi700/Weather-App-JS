@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://bootswatch.com/5/superhero/bootstrap.min.css"
+      href="https://bootswatch.com/5/materia/bootstrap.min.css"
     />
     <title>Weather App JS</title>
   </head>
@@ -14,26 +14,28 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 mx-auto tex-center bg-primary mt-5 p-5 rounded">
-          <h1 id="w-location"></h1>
-          <h3 class="text-dark" id="w-desc"></h3>
-          <h3 id="w-string"></h3>
-          <img id="w-icon" />
+          <h1 id="w-location" class="text-center"></h1>
+          <h4 class="text-light text-center text-capitalize" id="w-desc"></h4>
+          <h4 id="w-string" class="text-center"></h4>
+          <div class="d-flex">
+            <img src="" id="w-icon" class="mx-auto" />
+          </div>
           <ul class="list-group mt-3" id="w-details">
-            <li class="list-group-item" id="w-humidity"></li>
-            <li class="list-group-item" id="w-dewpoint"></li>
-            <li class="list-group-item" id="w-feels-like"></li>
-            <li class="list-group-item" id="w-wind"></li>
+            <li class="list-group-item pt-3" id="w-humidity"></li>
+            <li class="list-group-item pt-3 mt-1" id="w-feels-like"></li>
           </ul>
           <hr />
           <!-- Button trigger modal -->
-          <button
-            type="button"
-            class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#locModal"
-          >
-            Change Location
-          </button>
+          <div class="d-grid mx-auto">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#locModal"
+            >
+              Change Location
+            </button>
+          </div>
         </div>
       </div>
     </div>
