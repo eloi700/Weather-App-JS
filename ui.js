@@ -13,6 +13,6 @@ class UI {
         this.stringTemp.textContent = `Average Temp: ${(data.main.temp - 273.15).toFixed(2)} °C`;
         this.icon.src = `icons/${data.weather[0].icon}.png`;
         this.humidity.textContent = `Relative Humidity: ${data.main.humidity}%`;
-        this.feelsLike.textContent = `Feels like: ${(data.main.feels_like- 273.15)} °C`
+        this.feelsLike.textContent = `Feels like: ${(data.main.feels_like- 273.15).toFixed(0)} °C`
     }
 }

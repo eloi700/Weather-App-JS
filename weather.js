@@ -12,7 +12,7 @@ class Weather {
   //Fetch weather from API
   async getWeather() {
     const response = await fetch(
-      `${this.baseURL}${this.cityName}${this.country}&appid=${this.apiKey}`);
+      `${this.baseURL}${this.cityName}, ${this.country}&appid=${this.apiKey}`);
 
     const responseData = await response.json();
 
